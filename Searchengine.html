@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 600px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box h1{
+            font-size: 70px;
+            margin-bottom: 10px;
+        }
+        .box h1::first-letter{
+            color: rgb(55, 55, 220);
+        }
+        .Search input{
+            margin: 10px;
+            width: 500px;
+            padding: 8px;
+            border-radius: 10px;
+            border: none;
+            border: 3px solid #f1f1f1;
+            outline: none;
+            font-size: 20px;
+        }
+        .item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            
+        }
+        .item div{
+            width: 45px;
+            height: 40px;
+            background-color: rgb(121, 194, 194);
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .item2{
+            display: flex;
+            gap: 30px;
+        }
+        .item2 div{
+            width: 45px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Google</h1>
+        <div class="Search">
+            <input type="text" placeholder="Search">
+
+        </div>
+        <div class="item">
+            <div>G</div>
+            <div>Y</div>
+            <div>F</div>
+            <div>GI</div>
+            <div>H</div>
+        </div>
+        <div class="item2">
+            <div>I</div>
+            <div>R</div>
+            <div>W</div>
+            <div>Q</div>
+            <div>+</div>
+        </div>
+    </div>
+
+</body>
+</html>
