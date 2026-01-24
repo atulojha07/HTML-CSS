@@ -31,4 +31,3 @@ It focuses on **clean design**, **usability**, and **basic validation structure*
 
 ---
 
-## 📂 Project Structure
