@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .mmdu {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(237, 221, 223);
+        background-image: url(images\ \(2\).jpeg.jpg);
+        background-size: 95%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        gap: 40px;
+      }
+
+      .wifi {
+        width: 300px;
+        height: 450px;
+        border: 1px solid black;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 4px 3px black;
+        margin-left: 40%;
+        margin-top: 5%;
+
+        gap: 30px;
+      }
+      .wifi img {
+        width: 70%;
+        height: 70px;
+        padding-top: 10px;
+      }
+      h3:hover {
+        font-size: 150%;
+        background-color: rgb(222, 220, 220);
+      }
+      input {
+        width: 250px;
+        height: 40px;
+        border-radius: 14px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border: 2px solid #f1f1f1;
+        outline: none;
+      }
+      button {
+        background-color: lightgreen;
+        text-align: center;
+        width: 250px;
+        height: 40px;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 14px;
+        margin-bottom: 30px;
+        border: none;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      h2 {
+        text-shadow: 11px 1px 2px black,
+          1px 2px 3px chocolate 12px 13px 2px green;
+      }
+      @media (min-width: 200px) {
+        body {
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mmdu">
+      <p id="para"></p>
+      <h3 style="color: blue">WELCOME TO MMDU MULLANA</h3>
+      <br />
+      <h2 style="color: red">NAAC ACCREDITED GRADE 'A++' UNIVERSITY</h2>
+      <div class="wifi">
+        <img src="downloadmm.jpeg" alt="" />
+        <br />
+        <h4 style="color: blue; padding: 50px">
+          Please Enter User Name &
+          <br />
+          Password
+        </h4>
+        <label for="text" class="User"></label>
+        <input
+          type="text"
+          placeholder="User name"
+          id="number"
+          onmouseenter="color()"
+          onmouseleave="uncolor()"
+          required\
+        />
+        <br />
+        <label for="text" class="User"></label>
+        <input type="text" id="Password" placeholder="Password" />
+        <br />
+        <button id="btn" onclick="next()">Login</button>
+        <br />
+        <a href="#"><p>Click here For User MyAccount</p></a>
+        <!-- <center><div class="User" aria-placeholder="User Name"></div></center>  -->
+      </div>
+    </div>
+  </body>
+  <script>
+    var num = document.getElementById("number");
+    function color() {
+      var num = (document.getElementById("number").style.background = "");
+    }
+    function uncolor() {
+      var num = (document.getElementById("number").style.background = "white");
+    }
+    function next() {
+      let print = (document.getElementById("btn").innerText =
+        "Thanks you for Login");
+      let display = (document.getElementById("para").value = print);
+      document.write(display);
+    }
+    //
+  </script>
+</html>
